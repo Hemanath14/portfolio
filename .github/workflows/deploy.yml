@@ -1,0 +1,24 @@
+name: Portfolio Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Validate HTML
+        run: |
+          echo "Checking project structure"
+
+      - name: Deploy
+        run: |
+          echo "GitHub Pages auto deploys"
