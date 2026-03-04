@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en" class="apple-theme">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemanath U M | Cloud Engineer</title>
+    <!-- Inter closely resembles Apple's SF Pro when tracked properly -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Apple Style Intro Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-brand">
+                <span class="brand-text">H</span>
+                <!-- Floating Icons -->
+                <!-- Docker floating top-left -->
+                <div class="floating-icon" style="top: -30px; left: -40px; animation-delay: 0s;">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                        <path
+                            d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z" />
+                    </svg>
+                </div>
+                <!-- AWS floating top-right -->
+                <div class="floating-icon" style="top: -20px; right: -50px; animation-delay: 1.5s;">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                        <path
+                            d="M11.954 13.926c-.463 1.107-1.42 1.487-2.731 1.487-2.126 0-3.344-1.284-3.344-3.763 0-2.454 1.256-3.738 3.39-3.738.995 0 1.83.21 2.37.585l-.544.819a3.13 3.13 0 0 0-1.748-.485c-1.34 0-2.146.852-2.146 2.766 0 1.954.806 2.805 2.146 2.805.59 0 1.205-.183 1.554-.42l.623.863c-.496.48-1.57.944-2.822.944a4.197 4.197 0 0 1-4.217-4.246V7.476H3.14V7.439l-.013-.01v-.01h-.002a.252.252 0 0 1 .45-.164l2.847 4.093c.123.176.244.423.244.423h.023s.061-.264.12-.444l1.396-4.04h1.492v7.71a6.002 6.002 0 0 0 2.222 1a8.434 8.434 0 0 1 2.502.836l-.01 1.127zm6.756.096l1.7-1.077c-.958-1.554-2.585-2.26-4.707-2.26-2.6 0-4.08 1.205-4.08 2.628 0 1.57 1.3 2.158 3.52 2.64l.873.184c1.232.263 1.6.59 1.6 1.05 0 .618-.68 1.026-1.786 1.026a3.67 3.67 0 0 1-2.1-.644l-1.08 1.446c.92.71 2.176 1.066 3.4 1.066 2.57 0 4.14-1.234 4.14-2.8 0-1.616-1.282-2.196-3.418-2.67l-.873-.183c-1.393-.29-1.692-.618-1.692-1.01 0-.618.667-1.012 1.678-1.012a3.84 3.84 0 0 1 1.968.618v.004l1.834-3.123 1.996-5.467h-1.557l-.995 3.016a9.56 9.56 0 0 0-.256-1.5v.003h-1.385V7.44h4.156v1.492h-1.393L18.71 14.022zM15.42 16.51c0-.03.023-.053.053-.053a.055.055 0 0 1 .054.053.053.053 0 0 1-.054.053.053.053 0 0 1-.053-.053m0-.776h1.222l-1.465.75c-.322.164-.707.302-1.123.368L12.755 19.3h1.366l3.197-2.903v.002.002c-.053.076-.114.15-.183.226l-3.326 3.196Zm-4.32-.47a1.442 1.442 0 0 1 1.076.62.9.9 0 0 1-.58-.86M12.922 22a9.663 9.663 0 0 1-5.69-1.84A9.228 9.228 0 0 1 3.292 14.5l-.265.814A10.873 10.873 0 0 0 2 19.37l.004-.007a10.97 10.97 0 0 0 9.074 3.155c.613-.06 1.25-.19 1.844-.37l-2.073-1.64h-3.414c-1.996 0-3.613-1.62-3.613-3.616 0-.317.042-.625.122-.92l-1.28-3.7-.003-.008.125-.386c1.164.735 2.544 1.144 3.996 1.144a7.96 7.96 0 0 0 2.503-.404z" />
+                    </svg>
+                </div>
+                <!-- Azure hovering bottom-right -->
+                <div class="floating-icon" style="bottom: -10px; right: -30px; animation-delay: 0.8s;">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                        <path
+                            d="M0 8.877L2.247 5.91l8.405-3.416V.022l7.37 5.393L2.966 8.338v8.225L0 15.707zm24-4.45v14.651l-5.753 4.9-9.303-3.057v3.056l-5.978-7.416 15.057 1.798V5.415z" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Sonar Bars Animation -->
+            <div class="sonar-wrapper">
+                <div class="sonar-bars">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+
+            <div class="loader-text-content">
+                <h2 class="loader-name" style="color: #8b5cf6;">Building Experience</h2>
+                <p class="loader-subtitle">Assembling DevOps Solutions</p>
+
+                <div class="loading-stages">
+                    <div class="stage" id="stage-1">
+                        <div class="stage-dot"></div>
+                        <span style="flex: 1; text-align: left;">Initializing Cloud Infrastructure</span>
+                        <div class="stage-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="stage" id="stage-2">
+                        <div class="stage-dot"></div>
+                        <span style="flex: 1; text-align: left;">Loading DevOps Pipeline</span>
+                        <div class="stage-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="stage" id="stage-3">
+                        <div class="stage-dot"></div>
+                        <span style="flex: 1; text-align: left;">Deploying Portfolio</span>
+                        <div class="stage-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
+                                </path>
+                                <path
+                                    d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+                                </path>
+                                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="loader-progress"></div>
+                </div>
+                <div id="loader-percentage"
+                    style="text-align: right; font-size: 12px; color: var(--accent-blue); margin-top: 5px; font-weight: 500;">
+                    0%</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Particles Canvas -->
+    <canvas id="bg-canvas"
+        style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -2; pointer-events: none;"></canvas>
+
+    <!-- Advanced Cursor Elements -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <header>
+        <nav>
+            <div class="logo">Hemanath</div>
+            <ul class="nav-links">
+                <li><a href="#about" class="magnetic" data-cursor-type="link">About</a></li>
+                <li><a href="#experience" class="magnetic" data-cursor-type="link">Experience</a></li>
+                <li><a href="#education" class="magnetic" data-cursor-type="link">Education</a></li>
+                <li><a href="#skills" class="magnetic" data-cursor-type="link">Skills</a></li>
+                <li><a href="#projects" class="magnetic" data-cursor-type="link">Projects</a></li>
+                <li><a href="#contact" class="magnetic" data-cursor-type="link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Apple Style Minimalist Hero -->
+        <section id="about" class="hero fade-up">
+            <div class="hero-content">
+                <h1 class="hero-title" data-cursor-text>
+                    <span class="hello-text">Hello, I AM</span>
+                    <span class="name-text">Hemanath U M<span class="dot">.</span></span>
+                </h1>
+                <p class="hero-subtitle" style="max-width: 800px;">Junior Cloud Engineer bridging innovation with
+                    scalable infrastructure.</p>
+                <div class="action-buttons">
+                    <a href="#experience" class="btn primary magnetic" data-cursor-type="link">Explore Journey</a>
+                </div>
+            </div>
+
+            <div class="hero-image-container">
+                <!-- Subtle gradient orbs to match Apple's modern dark mode aesthetics -->
+                <div class="ambient-glow"></div>
+                <div class="ambient-glow glow-secondary"></div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="projects-section">
+            <div class="section-header fade-up">
+                <h2 data-cursor-text>Experience.</h2>
+                <p>Professional journey.</p>
+            </div>
+            <div class="project-showcase" style="gap: 40px;">
+                <div class="project-feature fade-up"
+                    style="margin-top: 0; align-items: flex-start; flex-direction: row;">
+                    <div class="project-info" style="border-left: 2px solid rgba(255,255,255,0.1); padding-left: 30px;">
+                        <h3>Junior Cloud Engineer</h3>
+                        <p style="color: var(--text-primary); font-weight: 500; margin-bottom: 10px;">Shellkode</p>
+                        <p style="font-size: 1rem; color: var(--text-secondary); margin-bottom: 20px;">Nov 2025 -
+                            Present</p>
+                        <p>Architecting and managing cloud infrastructure, deploying scalable solutions, and ensuring
+                            high availability across environments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="projects-section">
+            <div class="section-header fade-up" style="margin-top: 60px;">
+                <h2 data-cursor-text>Education.</h2>
+                <p>Academic background.</p>
+            </div>
+            <div class="project-showcase" style="gap: 40px;">
+                <div class="project-feature fade-up"
+                    style="margin-top: 0; align-items: flex-start; flex-direction: row;">
+                    <div class="project-info" style="border-left: 2px solid rgba(255,255,255,0.1); padding-left: 30px;">
+                        <h3>B.Tech Artificial Intelligence & Data Science</h3>
+                        <p style="color: var(--text-primary); font-weight: 500; margin-bottom: 5px;">Sri Ramakrishna
+                            Engineering College</p>
+                        <p style="font-size: 1rem; color: var(--text-secondary);">2021 - 2024</p>
+                    </div>
+                </div>
+                <div class="project-feature fade-up"
+                    style="margin-top: 0; align-items: flex-start; flex-direction: row;">
+                    <div class="project-info" style="border-left: 2px solid rgba(255,255,255,0.1); padding-left: 30px;">
+                        <h3>Diploma in Computer Science</h3>
+                        <p style="color: var(--text-primary); font-weight: 500; margin-bottom: 5px;">Sri Ramakrishna
+                            Polytechnic College</p>
+                        <p style="font-size: 1rem; color: var(--text-secondary);">2018 - 2021</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industry Knowledge Section -->
+        <section id="industry-knowledge" class="skills-section">
+            <div class="section-header fade-up">
+                <h2 data-cursor-text>Industry Knowledge</h2>
+                <p>Core methodologies and practices.</p>
+            </div>
+
+            <div class="bento-grid">
+
+                <div class="bento-item medium fade-up" style="justify-content: flex-start; gap: 15px;">
+                    <div class="icon-header">
+                        <div class="icon-box" style="background: #8b5cf6;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+                                <path d="M3 3v5h5" />
+                                <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16" />
+                                <path d="M16 21v-5h5" />
+                            </svg>
+                        </div>
+                        <h3 style="margin-bottom: 0;">Continuous Integration &<br>Continuous Delivery</h3>
+                    </div>
+                    <p style="margin-top: 10px;">Advanced CI/CD pipeline implementation with automated testing,
+                        deployment, and rollback strategies.</p>
+                </div>
+
+                <div class="bento-item medium fade-up"
+                    style="transition-delay: 0.1s; justify-content: flex-start; gap: 15px;">
+                    <div class="icon-header">
+                        <div class="icon-box" style="background: #10b981;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                        </div>
+                        <h3 style="margin-bottom: 0;">High Availability (HA)</h3>
+                    </div>
+                    <p style="margin-top: 10px;">Design and implement fault-tolerant systems with 99.9% uptime and
+                        disaster recovery capabilities.</p>
+                </div>
+
+                <div class="bento-item medium fade-up"
+                    style="transition-delay: 0.2s; justify-content: flex-start; gap: 15px;">
+                    <div class="icon-header">
+                        <div class="icon-box" style="background: #f97316;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+                                <line x1="12" y1="9" x2="12" y2="13" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
+                            </svg>
+                        </div>
+                        <h3 style="margin-bottom: 0;">Incident Management</h3>
+                    </div>
+                    <p style="margin-top: 10px;">Rapid incident response, root cause analysis, and preventive measures
+                        implementation.</p>
+                </div>
+
+                <div class="bento-item medium fade-up"
+                    style="transition-delay: 0.3s; justify-content: flex-start; gap: 15px;">
+                    <div class="icon-header">
+                        <div class="icon-box" style="background: #a855f7;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="10" rx="2" />
+                                <circle cx="12" cy="5" r="2" />
+                                <path d="M12 7v4" />
+                                <line x1="8" y1="16" x2="8" y2="16" />
+                                <line x1="16" y1="16" x2="16" y2="16" />
+                            </svg>
+                        </div>
+                        <h3 style="margin-bottom: 0;">Process Automation</h3>
+                    </div>
+                    <p style="margin-top: 10px;">End-to-end workflow automation reducing manual intervention by 85%.</p>
+                </div>
+
+                <div class="bento-item medium fade-up"
+                    style="transition-delay: 0.4s; justify-content: flex-start; gap: 15px;">
+                    <div class="icon-header">
+                        <div class="icon-box" style="background: #3b82f6;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 18H3a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3" />
+                                <path d="M21 16v2a2 2 0 0 1-2 2h-3" />
+                                <path d="M16 4h3a2 2 0 0 1 2 2v2" />
+                                <path d="M3 12h18" />
+                                <path d="M12 3v18" />
+                            </svg>
+                        </div>
+                        <h3 style="margin-bottom: 0;">Release Engineering</h3>
+                    </div>
+                    <p style="margin-top: 10px;">Streamlined release management with automated deployment pipelines and
+                        rollback capabilities.</p>
+                </div>
+
+                <div class="bento-item medium fade-up"
+                    style="transition-delay: 0.5s; justify-content: flex-start; gap: 15px;">
+                    <div class="icon-header">
+                        <div class="icon-box" style="background: #b45309;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="18" cy="5" r="3" />
+                                <circle cx="6" cy="12" r="3" />
+                                <circle cx="18" cy="19" r="3" />
+                                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                            </svg>
+                        </div>
+                        <h3 style="margin-bottom: 0;">Scaled Agile Framework</h3>
+                    </div>
+                    <p style="margin-top: 10px;">Implementation of SAFe practices for large-scale enterprise agile
+                        transformations.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Tools & Technologies Section -->
+        <section id="tools" class="skills-section">
+            <div class="section-header fade-up">
+                <h2 data-cursor-text>Tools & Technologies</h2>
+                <p>The tech stack powering the cloud.</p>
+            </div>
+
+            <div class="bento-grid">
+
+                <div class="bento-item large-tool fade-up"
+                    style="grid-column: span 2; justify-content: flex-start; gap: 15px;">
+                    <div class="icon-header" style="align-items: flex-start;">
+                        <div class="icon-box" style="background: #f97316;">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <title>Amazon Web Services</title>
+                                <path
+                                    d="M11.954 13.926c-.463 1.107-1.42 1.487-2.731 1.487-2.126 0-3.344-1.284-3.344-3.763 0-2.454 1.256-3.738 3.39-3.738.995 0 1.83.21 2.37.585l-.544.819a3.13 3.13 0 0 0-1.748-.485c-1.34 0-2.146.852-2.146 2.766 0 1.954.806 2.805 2.146 2.805.59 0 1.205-.183 1.554-.42l.623.863c-.496.48-1.57.944-2.822.944a4.197 4.197 0 0 1-4.217-4.246V7.476H3.14V7.439l-.013-.01v-.01h-.002a.252.252 0 0 1 .45-.164l2.847 4.093c.123.176.244.423.244.423h.023s.061-.264.12-.444l1.396-4.04h1.492v7.71a6.002 6.002 0 0 0 2.222 1a8.434 8.434 0 0 1 2.502.836l-.01 1.127zm6.756.096l1.7-1.077c-.958-1.554-2.585-2.26-4.707-2.26-2.6 0-4.08 1.205-4.08 2.628 0 1.57 1.3 2.158 3.52 2.64l.873.184c1.232.263 1.6.59 1.6 1.05 0 .618-.68 1.026-1.786 1.026a3.67 3.67 0 0 1-2.1-.644l-1.08 1.446c.92.71 2.176 1.066 3.4 1.066 2.57 0 4.14-1.234 4.14-2.8 0-1.616-1.282-2.196-3.418-2.67l-.873-.183c-1.393-.29-1.692-.618-1.692-1.01 0-.618.667-1.012 1.678-1.012a3.84 3.84 0 0 1 1.968.618v.004l1.834-3.123 1.996-5.467h-1.557l-.995 3.016a9.56 9.56 0 0 0-.256-1.5v.003h-1.385V7.44h4.156v1.492h-1.393L18.71 14.022zM15.42 16.51c0-.03.023-.053.053-.053a.055.055 0 0 1 .054.053.053.053 0 0 1-.054.053.053.053 0 0 1-.053-.053m0-.776h1.222l-1.465.75c-.322.164-.707.302-1.123.368L12.755 19.3h1.366l3.197-2.903v.002.002c-.053.076-.114.15-.183.226l-3.326 3.196Zm-4.32-.47a1.442 1.442 0 0 1 1.076.62.9.9 0 0 1-.58-.86M12.922 22a9.663 9.663 0 0 1-5.69-1.84A9.228 9.228 0 0 1 3.292 14.5l-.265.814A10.873 10.873 0 0 0 2 19.37l.004-.007a10.97 10.97 0 0 0 9.074 3.155c.613-.06 1.25-.19 1.844-.37l-2.073-1.64h-3.414c-1.996 0-3.613-1.62-3.613-3.616 0-.317.042-.625.122-.92l-1.28-3.7-.003-.008.125-.386c1.164.735 2.544 1.144 3.996 1.144a7.96 7.96 0 0 0 2.503-.404z" />
+                            </svg>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 style="margin-bottom: 5px;">Amazon Web Services (AWS)</h3>
+                            <p style="margin-bottom: 15px;">Expert-level AWS cloud architecture, migration, and cost
+                                optimization strategies.</p>
+                        </div>
+                    </div>
+                    <div class="tag-list" style="margin-top: auto;">
+                        <span class="tag">EC2</span>
+                        <span class="tag">RDS</span>
+                        <span class="tag">S3</span>
+                        <span class="tag">VPC</span>
+                        <span class="tag">Lambda</span>
+                        <span class="tag">ELB</span>
+                        <span class="tag">Auto Scaling</span>
+                        <span class="tag">CloudWatch</span>
+                        <span class="tag">CloudFormation</span>
+                        <span class="tag">Route 53</span>
+                        <span class="tag">CloudFront</span>
+                        <span class="tag">IAM</span>
+                    </div>
+                </div>
+
+                <div class="bento-item large-tool fade-up"
+                    style="grid-column: span 2; transition-delay: 0.1s; justify-content: flex-start; gap: 15px;">
+                    <div class="icon-header" style="align-items: flex-start;">
+                        <div class="icon-box" style="background: #0078d7;">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <title>Azure DevOps</title>
+                                <path
+                                    d="M0 8.877L2.247 5.91l8.405-3.416V.022l7.37 5.393L2.966 8.338v8.225L0 15.707zm24-4.45v14.651l-5.753 4.9-9.303-3.057v3.056l-5.978-7.416 15.057 1.798V5.415z" />
+                            </svg>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 style="margin-bottom: 5px;">Azure DevOps & Cloud</h3>
+                            <p style="margin-bottom: 15px;">Comprehensive Azure DevOps implementation for
+                                enterprise-level CI/CD workflows.</p>
+                        </div>
+                    </div>
+                    <div class="tag-list" style="margin-top: auto;">
+                        <span class="tag">Azure Repos</span>
+                        <span class="tag">Azure Pipelines</span>
+                        <span class="tag">Azure Boards</span>
+                        <span class="tag">Azure Artifacts</span>
+                        <span class="tag">Azure VMs</span>
+                        <span class="tag">Azure SQL</span>
+                        <span class="tag">AKS</span>
+                        <span class="tag">Azure Monitor</span>
+                    </div>
+                </div>
+
+                <div class="bento-item large-tool fade-up"
+                    style="grid-column: span 2; transition-delay: 0.2s; justify-content: flex-start; gap: 15px;">
+                    <div class="icon-header" style="align-items: flex-start;">
+                        <div class="icon-box" style="background: #181717;">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <title>GitHub</title>
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                            </svg>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 style="margin-bottom: 5px;">GitHub & Version Control</h3>
+                            <p style="margin-bottom: 15px;">Advanced Git workflows, GitHub Actions, and collaborative
+                                development practices.</p>
+                        </div>
+                    </div>
+                    <div class="tag-list" style="margin-top: auto;">
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub Actions</span>
+                        <span class="tag">Branch Policies</span>
+                        <span class="tag">Security Scanning</span>
+                        <span class="tag">Collaborative Workflows</span>
+                    </div>
+                </div>
+
+                <div class="bento-item large-tool fade-up"
+                    style="grid-column: span 2; transition-delay: 0.3s; justify-content: flex-start; gap: 15px;">
+                    <div class="icon-header" style="align-items: flex-start;">
+                        <div class="icon-box" style="background: #2496ed;">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <title>Docker</title>
+                                <path
+                                    d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z" />
+                            </svg>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 style="margin-bottom: 5px;">Docker & Containerization</h3>
+                            <p style="margin-bottom: 15px;">Container orchestration, multi-stage builds, and security
+                                best practices.</p>
+                        </div>
+                    </div>
+                    <div class="tag-list" style="margin-top: auto;">
+                        <span class="tag">Docker Engine</span>
+                        <span class="tag">Docker Compose</span>
+                        <span class="tag">Container Security</span>
+                        <span class="tag">Multi-stage Builds</span>
+                    </div>
+                </div>
+
+                <div class="bento-item large-tool fade-up"
+                    style="grid-column: span 2; transition-delay: 0.4s; justify-content: flex-start; gap: 15px;">
+                    <div class="icon-header" style="align-items: flex-start;">
+                        <div class="icon-box" style="background: #326ce5;">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <title>Kubernetes</title>
+                                <path
+                                    d="M10.204 14.35l.007.01-.999 2.413a5.171 5.171 0 0 1-2.075-2.597l2.578-.437.004.005a.44.44 0 0 1 .484.606zm-.833-2.129a.44.44 0 0 0 .173-.756l.002-.011L7.585 9.7a5.143 5.143 0 0 0-.73 3.255l2.514-.725.002-.009zm1.145-1.98a.44.44 0 0 0 .699-.337l.01-.005.15-2.62a5.144 5.144 0 0 0-3.01 1.442l2.147 1.523.004-.002zm.76 2.75l.723.349.722-.347.18-.78-.5-.623h-.804l-.5.623.179.779zm1.5-3.095a.44.44 0 0 0 .7.336l.008.003 2.134-1.513a5.188 5.188 0 0 0-2.992-1.442l.148 2.615.002.001zm10.876 5.97l-5.773 7.181a1.6 1.6 0 0 1-1.248.594l-9.261.003a1.6 1.6 0 0 1-1.247-.596l-5.776-7.18a1.583 1.583 0 0 1-.307-1.34L2.1 5.573c.108-.47.425-.864.863-1.073L11.305.513a1.606 1.606 0 0 1 1.385 0l8.345 3.985c.438.209.755.604.863 1.073l2.062 8.955c.108.47-.005.963-.308 1.34zm-3.289-2.057c-.042-.01-.103-.026-.145-.034-.174-.033-.315-.025-.479-.038-.35-.037-.638-.067-.895-.148-.105-.04-.18-.165-.216-.216l-.201-.059a6.45 6.45 0 0 0-.105-2.332 6.465 6.465 0 0 0-.936-2.163c.052-.047.15-.133.177-.159.008-.09.001-.183.094-.282.197-.185.444-.338.743-.522.142-.084.273-.137.415-.242.032-.024.076-.062.11-.089.24-.191.295-.52.123-.736-.172-.216-.506-.236-.745-.045-.034.027-.08.062-.111.088-.134.116-.217.23-.33.35-.246.25-.45.458-.673.609-.097.056-.239.037-.303.033l-.19.135a6.545 6.545 0 0 0-4.146-2.003l-.012-.223c-.065-.062-.143-.115-.163-.25-.022-.268.015-.557.057-.905.023-.163.061-.298.068-.475.001-.04-.001-.099-.001-.142 0-.306-.224-.555-.5-.555-.275 0-.499.249-.499.555l.001.014c0 .041-.002.092 0 .128.006.177.044.312.067.475.042.348.078.637.056.906a.545.545 0 0 1-.162.258l-.012.211a6.424 6.424 0 0 0-4.166 2.003 8.373 8.373 0 0 1-.18-.128c-.09.012-.18.04-.297-.029-.223-.15-.427-.358-.673-.608-.113-.12-.195-.234-.329-.349-.03-.026-.077-.062-.111-.088a.594.594 0 0 0-.348-.132.481.481 0 0 0-.398.176c-.172.216-.117.546.123.737l.007.005.104.083c.142.105.272.159.414.242.299.185.546.338.743.522.076.082.09.226.1.288l.16.143a6.462 6.462 0 0 0-1.02 4.506l-.208.06c-.055.072-.133.184-.215.217-.257.081-.546.11-.895.147-.164.014-.305.006-.48.039-.037.007-.09.02-.133.03l-.004.002-.007.002c-.295.071-.484.342-.423.608.061.267.349.429.645.365l.007-.001.01-.003.129-.029c.17-.046.294-.113.448-.172.33-.118.604-.217.87-.256.112-.009.23.069.288.101l.217-.037a6.5 6.5 0 0 0 2.88 3.596l-.09.218c.033.084.069.199.044.282-.097.252-.263.517-.452.813-.091.136-.185.242-.268.399-.02.037-.045.095-.064.134-.128.275-.034.591.213.71.248.12.556-.007.69-.282v-.002c.02-.039.046-.09.062-.127.07-.162.094-.301.144-.458.132-.332.205-.68.387-.897.05-.06.13-.082.215-.105l.113-.205a6.453 6.453 0 0 0 4.609.012l.106.192c.086.028.18.042.256.155.136.232.229.507.342.84.05.156.074.295.145.457.016.037.043.09.062.129.133.276.442.402.69.282.247-.118.341-.435.213-.71-.02-.039-.045-.096-.065-.134-.083-.156-.177-.261-.268-.398-.19-.296-.346-.541-.443-.793-.04-.13.007-.21.038-.294-.018-.022-.059-.144-.083-.202a6.499 6.499 0 0 0 2.88-3.622c.064.01.176.03.213.038.075-.05.144-.114.28-.104.266.039.54.138.87.256.154.06.277.128.448.173.036.01.088.019.13.028l.009.003.007.001c.297.064.584-.098.645-.365.06-.266-.128-.537-.423-.608zM16.4 9.701l-1.95 1.746v.005a.44.44 0 0 0 .173.757l.003.01 2.526.728a5.199 5.199 0 0 0-.108-1.674A5.208 5.208 0 0 0 16.4 9.7zm-4.013 5.325a.437.437 0 0 0-.404-.232.44.44 0 0 0-.372.233h-.002l-1.268 2.292a5.164 5.164 0 0 0 3.326.003l-1.27-2.296h-.01zm1.888-1.293a.44.44 0 0 0-.27.036.44.44 0 0 0-.214.572l-.003.004 1.01 2.438a5.15 5.15 0 0 0 2.081-2.615l-2.6-.44-.004.005z" />
+                            </svg>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 style="margin-bottom: 5px;">Kubernetes & Orchestration</h3>
+                            <p style="margin-bottom: 15px;">Production-grade Kubernetes cluster management, networking,
+                                and security.</p>
+                        </div>
+                    </div>
+                    <div class="tag-list" style="margin-top: auto;">
+                        <span class="tag">K8s Clusters</span>
+                        <span class="tag">Helm Charts</span>
+                        <span class="tag">Ingress Controllers</span>
+                        <span class="tag">RBAC</span>
+                    </div>
+                </div>
+
+                <div class="bento-item large-tool fade-up"
+                    style="grid-column: span 2; transition-delay: 0.5s; justify-content: flex-start; gap: 15px;">
+                    <div class="icon-header" style="align-items: flex-start;">
+                        <div class="icon-box" style="background: #f46800;">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <title>Grafana</title>
+                                <path
+                                    d="M23.02 10.59a8.578 8.578 0 0 0-.862-3.034 8.911 8.911 0 0 0-1.789-2.445c.337-1.342-.413-2.505-.413-2.505-1.292-.08-2.113.4-2.416.62-.052-.02-.102-.044-.154-.064-.22-.089-.446-.172-.677-.247-.231-.073-.47-.14-.711-.197a9.867 9.867 0 0 0-.875-.161C14.557.753 12.94 0 12.94 0c-1.804 1.145-2.147 2.744-2.147 2.744l-.018.093c-.098.029-.2.057-.298.088-.138.042-.275.094-.413.143-.138.055-.275.107-.41.166a8.869 8.869 0 0 0-1.557.87l-.063-.029c-2.497-.955-4.716.195-4.716.195-.203 2.658.996 4.33 1.235 4.636a11.608 11.608 0 0 0-.607 2.635C1.636 12.677.953 15.014.953 15.014c1.926 2.214 4.171 2.351 4.171 2.351.003-.002.006-.002.006-.005.285.509.615.994.986 1.446.156.19.32.371.488.548-.704 2.009.099 3.68.099 3.68 2.144.08 3.553-.937 3.849-1.173a9.784 9.784 0 0 0 3.164.501h.08l.055-.003.107-.002.103-.005.003.002c1.01 1.44 2.788 1.646 2.788 1.646 1.264-1.332 1.337-2.653 1.337-2.94v-.058c0-.02-.003-.039-.003-.06.265-.187.52-.387.758-.6a7.875 7.875 0 0 0 1.415-1.7c1.43.083 2.437-.885 2.437-.885-.236-1.49-1.085-2.216-1.264-2.354l-.018-.013-.016-.013a.217.217 0 0 1-.031-.02c.008-.092.016-.18.02-.27.011-.162.016-.323.016-.48v-.253l-.005-.098-.008-.135a1.891 1.891 0 0 0-.01-.13c-.003-.042-.008-.083-.013-.125l-.016-.124-.018-.122a6.215 6.215 0 0 0-2.032-3.73 6.015 6.015 0 0 0-3.222-1.46 6.292 6.292 0 0 0-.85-.048l-.107.002h-.063l-.044.003-.104.008a4.777 4.777 0 0 0-3.335 1.695c-.332.4-.592.84-.768 1.297a4.594 4.594 0 0 0-.312 1.817l.003.091c.005.055.007.11.013.164a3.615 3.615 0 0 0 .698 1.82 3.53 3.53 0 0 0 1.827 1.282c.33.098.66.14.971.137.039 0 .078 0 .114-.002l.063-.003c.02 0 .041-.003.062-.003.034-.002.065-.007.099-.01.007 0 .018-.003.028-.003l.031-.005.06-.008a1.18 1.18 0 0 0 .112-.02c.036-.008.072-.013.109-.024a2.634 2.634 0 0 0 .914-.415c.028-.02.056-.041.085-.065a.248.248 0 0 0 .039-.35.244.244 0 0 0-.309-.06l-.078.042c-.09.044-.184.083-.283.116a2.476 2.476 0 0 1-.475.096c-.028.003-.054.006-.083.006l-.083.002c-.026 0-.054 0-.08-.002l-.102-.006h-.012l-.024.006c-.016-.003-.031-.003-.044-.006-.031-.002-.06-.007-.091-.01a2.59 2.59 0 0 1-.724-.213 2.557 2.557 0 0 1-.667-.438 2.52 2.52 0 0 1-.805-1.475 2.306 2.306 0 0 1-.029-.444l.006-.122v-.023l.002-.031c.003-.021.003-.04.005-.06a3.163 3.163 0 0 1 1.352-2.29 3.12 3.12 0 0 1 .937-.43 2.946 2.946 0 0 1 .776-.101h.06l.07.002.045.003h.026l.07.005a4.041 4.041 0 0 1 1.635.49 3.94 3.94 0 0 1 1.602 1.662 3.77 3.77 0 0 1 .397 1.414l.005.076.003.075c.002.026.002.05.002.075 0 .024.003.052 0 .07v.065l-.002.073-.008.174a6.195 6.195 0 0 1-.08.639 5.1 5.1 0 0 1-.267.927 5.31 5.31 0 0 1-.624 1.13 5.052 5.052 0 0 1-3.237 2.014 4.82 4.82 0 0 1-.649.066l-.039.003h-.287a6.607 6.607 0 0 1-1.716-.265 6.776 6.776 0 0 1-3.4-2.274 6.75 6.75 0 0 1-.746-1.15 6.616 6.616 0 0 1-.714-2.596l-.005-.083-.002-.02v-.056l-.003-.073v-.096l-.003-.104v-.07l.003-.163c.008-.22.026-.45.054-.678a8.707 8.707 0 0 1 .28-1.355c.128-.444.286-.872.473-1.277a7.04 7.04 0 0 1 1.456-2.1 5.925 5.925 0 0 1 .953-.763c.169-.111.343-.213.524-.306.089-.05.182-.091.273-.135.047-.02.093-.042.138-.062a7.177 7.177 0 0 1 .714-.267l.145-.045c.049-.015.098-.026.148-.041.098-.029.197-.052.296-.076.049-.013.1-.02.15-.033l.15-.032.151-.028.076-.013.075-.01.153-.024c.057-.01.114-.013.171-.023l.169-.021c.036-.003.073-.008.106-.01l.073-.008.036-.003.042-.002c.057-.003.114-.008.171-.01l.086-.006h.023l.037-.003.145-.007a7.999 7.999 0 0 1 1.708.125 7.917 7.917 0 0 1 2.048.68 8.253 8.253 0 0 1 1.672 1.09l.09.077.089.078c.06.052.114.107.171.159.057.052.112.106.166.16.052.055.107.107.159.164a8.671 8.671 0 0 1 1.41 1.978c.012.026.028.052.04.078l.04.078.075.156c.023.051.05.1.07.153l.065.15a8.848 8.848 0 0 1 .45 1.34.19.19 0 0 0 .201.142.186.186 0 0 0 .172-.184c.01-.246.002-.532-.024-.856z" />
+                            </svg>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 style="margin-bottom: 5px;">Monitoring & Observability</h3>
+                            <p style="margin-bottom: 15px;">Comprehensive system monitoring, log aggregation, and
+                                alerting solutions.</p>
+                        </div>
+                    </div>
+                    <div class="tag-list" style="margin-top: auto;">
+                        <span class="tag">Prometheus</span>
+                        <span class="tag">Grafana</span>
+                        <span class="tag">Splunk</span>
+                        <span class="tag">Datadog</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Apple Style Minimalist Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="section-header fade-up">
+                <h2 data-cursor-text>Projects. In every detail.</h2>
+                <p>Featured cloud architectures.</p>
+            </div>
+
+            <div class="project-showcase">
+
+                <!-- Project 1 -->
+                <div class="project-feature fade-up">
+                    <div class="project-info">
+                        <h3>Multi-Tier VPC Architecture.</h3>
+                        <p>A highly available 3-tier architecture designed on AWS. Featuring public/private subnets, NAT
+                            Gateways, Auto Scaling Groups, and ALBs across availability zones.</p>
+                        <a href="#" class="inline-link magnetic" data-cursor-type="link">View Project <span
+                                class="arrow">›</span></a>
+                    </div>
+                    <div class="project-visual">
+                        <div class="mock-ui">
+                            <div class="mock-header">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="mock-body">
+                                <div class="mock-line" style="width: 40%"></div>
+                                <div class="mock-line" style="width: 80%"></div>
+                                <div class="mock-line" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-feature reverse fade-up">
+                    <div class="project-info">
+                        <h3>Serverless CI/CD.</h3>
+                        <p>Automated continuous integration pipeline. Containerized microservices deployed to managed
+                            Kubernetes with absolute zero downtime.</p>
+                        <a href="#" class="inline-link magnetic" data-cursor-type="link">View Project <span
+                                class="arrow">›</span></a>
+                    </div>
+                    <div class="project-visual dark-visual">
+                        <div class="mock-ui dark">
+                            <div class="mock-header">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="mock-body">
+                                <div class="mock-line" style="width: 70%"></div>
+                                <div class="mock-line" style="width: 50%"></div>
+                                <div class="mock-line" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact-form" class="projects-section">
+            <div class="section-header fade-up">
+                <h2 data-cursor-text>Contact Form.</h2>
+                <p>Start a conversation.</p>
+            </div>
+            <div class="bento-item large fade-up" style="max-width: 700px; margin: 0 auto; padding: 50px;">
+                <form class="apple-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Name" required class="form-input magnetic"
+                            data-cursor-type="link">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email Address" required class="form-input magnetic"
+                            data-cursor-type="link">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="4" placeholder="Your Message" required class="form-input magnetic"
+                            data-cursor-type="link"></textarea>
+                    </div>
+                    <button type="submit" class="btn primary magnetic" data-cursor-type="link"
+                        style="width: 100%; margin-top: 10px;">Transmit Securely</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Minimalist Footer -->
+        <footer id="contact" class="fade-up">
+            <div class="footer-content">
+                <h2 data-cursor-text>Let's build together.</h2>
+                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
+                    <a href="mailto:hemnath1421@gmail.com" class="btn primary magnetic"
+                        data-cursor-type="link">Email</a>
+                    <a href="https://linkedin.com/in/hemanath-u-m" target="_blank" class="btn magnetic"
+                        data-cursor-type="link"
+                        style="border: 1px solid var(--text-primary); color: var(--text-primary);">LinkedIn</a>
+                    <a href="https://github.com/Hemanath14" target="_blank" class="btn magnetic" data-cursor-type="link"
+                        style="border: 1px solid var(--text-primary); color: var(--text-primary);">GitHub</a>
+                </div>
+                <div class="footer-legal">
+                    <p>Copyright © 2026 Hemanath U M. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
